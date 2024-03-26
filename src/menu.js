@@ -1,5 +1,5 @@
-import Burger1 from './images/burger1.jpeg';
-import Burger2 from './images/burger2.jpg';
+import Burger1 from "./images/burger1.jpeg";
+import Burger2 from "./images/burger2.jpg";
 
 function createNewItem(imageLink, text) {
 	let menuItemDiv = document.createElement("div");
@@ -12,10 +12,9 @@ function createNewItem(imageLink, text) {
 	image.src = imageLink;
 
 	menuItemDiv.appendChild(image);
-	menuItemDiv.appendChild(menuItemText)
+	menuItemDiv.appendChild(menuItemText);
 
-	return menuItemDiv
-
+	return menuItemDiv;
 }
 
 export default function showMenu() {
@@ -24,13 +23,11 @@ export default function showMenu() {
 	let customDiv = document.createElement("div");
 	customDiv.setAttribute("id", "menu");
 
-
 	let item1 = createNewItem(Burger1, "Le classic: 5€");
 	let item2 = createNewItem(Burger2, "Le spécial: 8€");
 
 	customDiv.appendChild(item1);
 	customDiv.appendChild(item2);
-
 
 	contentDiv.appendChild(customDiv);
 
