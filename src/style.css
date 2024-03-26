@@ -46,6 +46,7 @@ table {
 
 :root {
     --main-color: #121D29;
+    --action: #84A943   
 }
 
 
@@ -64,7 +65,8 @@ header {
     min-height: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 200px;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 #logo {
@@ -73,8 +75,28 @@ header {
 
 nav {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 30px;
+    transition: color 0.5s;
+}
+
+button:hover {
+    color: var(--action);
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
 }
 
 #content {
