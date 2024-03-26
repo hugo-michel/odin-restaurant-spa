@@ -6,7 +6,7 @@ export default function showHome() {
 
 	let h1 = document.createElement("h1");
 
-	h1.textContent = "Welcome to Big Burger Restaurant !";
+	h1.textContent = "Welcome to Big Burger Restaurant";
 
 	customDiv.appendChild(h1);
 
