@@ -1,14 +1,16 @@
 export default function showHome() {
 	const contentDiv = document.querySelector("#content");
 
-	let homeDiv = document.createElement("div");
+	let customDiv = document.createElement("div");
+	customDiv.setAttribute("id", "custom");
+
 	let h1 = document.createElement("h1");
 
 	h1.textContent = "Welcome to Big Burger Restaurant !";
 
-	homeDiv.appendChild(h1);
+	customDiv.appendChild(h1);
 
-	contentDiv.appendChild(homeDiv);
+	contentDiv.appendChild(customDiv);
 
 	return contentDiv;
 }
